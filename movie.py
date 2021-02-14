@@ -9,8 +9,8 @@ def main():
         title="The Imitation Game",
         date_released=2014,
         actors=[
-            Actor(name="Benedict", last_name="Cumberbatch", role="Alan Turing"),
-            Actor(name="Kira", last_name="Knightley", role="Joan Clarke")
+            Actor(first_name="Benedict", last_name="Cumberbatch", role="Alan Turing"),
+            Actor(first_name="Keira", last_name="Knightley", role="Joan Clarke")
         ]
     )
     view.add_movie(movie_obj=movie_to_add)
