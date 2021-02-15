@@ -4,6 +4,7 @@ from movie.view import View
 
 def main():
     view = View()
+    print("Stored movies: ")
     view.show_all()
     movie_to_add = Movie(
         title="The Imitation Game",
@@ -14,6 +15,7 @@ def main():
         ]
     )
     view.add_movie(movie_obj=movie_to_add)
+    print("Stored movies after adding another one:")
     view.show_all()
 
 

@@ -7,3 +7,6 @@ class Controller:
 
     def add_movie(self, movie_obj):
         self.model.add_movie(movie_obj)
+
+    def get_all_movies(self):
+        return self.model.get_all_movies()
