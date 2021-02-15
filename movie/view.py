@@ -1,15 +1,13 @@
 from movie.controller import Controller
-from movie.model import Model
 
 
 class View:
 
     def __init__(self):
         self.controller = Controller()
-        self.model = Model()
 
     def show_all(self):
-        movies = self.model.get_all_movies()
+        movies = self.controller.get_all_movies()
         for movie in movies:
             print(movie)
 
