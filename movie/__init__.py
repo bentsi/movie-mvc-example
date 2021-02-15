@@ -1,8 +1,9 @@
 import json
+from typing import Any, Dict
 
 
 class Actor:
-    def __init__(self, name: str, last_name: str, role: str):
+    def __init__(self, name: str, last_name: str, role: str, **kwArgs: Dict[Any]):
         self.name = name
         self.last_name = last_name
         self.role = role
