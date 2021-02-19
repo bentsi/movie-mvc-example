@@ -1,5 +1,5 @@
-from movie import Movie, Actor
 from movie.view import View
+from movie.movie_basic import Movie, Actor
 
 
 def main():
