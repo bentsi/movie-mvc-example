@@ -3,7 +3,6 @@ from movie.model import Model
 
 
 class View:
-
     def __init__(self):
         self.controller = Controller()
         self.model = Model()
@@ -15,3 +14,7 @@ class View:
 
     def add_movie(self, movie_obj):
         self.controller.add_movie(movie_obj)
+
+if __name__ == "__main__":
+    view = View()
+    view.show_all()
