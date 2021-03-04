@@ -5,8 +5,8 @@ from movie.model import Model
 class View:
 
     def __init__(self):
-        self.controller = Controller()
         self.model = Model()
+        self.controller = Controller(self.model)
 
     def show_all(self):
         movies = self.model.get_all_movies()
